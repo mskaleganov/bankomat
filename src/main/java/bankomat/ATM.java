@@ -21,7 +21,7 @@ public class ATM implements Application {
         if ((this.pin.equals(pin)) & (this.card == card)) {
             return "30 рублей";
         } else {
-            return "Пин код не верен";
+            return "Пин код не верен.";
         }
     }
 }
