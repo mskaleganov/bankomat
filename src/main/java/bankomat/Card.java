@@ -1,16 +1,21 @@
 package bankomat;
 
-import java.math.BigDecimal;
-import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 
 public class Card {
-    private String Name;
-    private String FirstName;
-    private String Number;
-    private Date Date;
-    private int PIN;
-    private int CVV;
-    private boolean IsBlocked;
-    private BigDecimal Balance;
+    private String name;
+    private String firstName;
+    private String pan;
+    private String CVV;
 
+    public Card(String name, String firstName, String pan, String CVV) {
+        this.name = name;
+        this.firstName = firstName;
+        this.pan = pan;
+        this.CVV = CVV;
+    }
 }
